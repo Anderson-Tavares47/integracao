@@ -5,7 +5,8 @@
       "src": "src/server.ts",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["src/**/*"]
+        "includeFiles": ["src/**/*"],
+        "nodeVersion": "16.x" // Especifique a versão aqui
       }
     }
   ],
@@ -16,4 +17,3 @@
     }
   ]
 }
-
