@@ -2,9 +2,9 @@
   "name": "my-vercel-app",
   "version": "1.0.0",
   "description": "Projeto para rodar Express com TypeScript na Vercel",
-  "main": "dist/server.js",
+  "main": "dist/server.ts",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node dist/server.ts",
     "build": "tsc",
     "dev": "ts-node src/server.ts",
     "vercel-build": "npm run build"
