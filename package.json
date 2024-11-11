@@ -1,18 +1,22 @@
 {
-  "description": "",
+  "name": "my-vercel-app",
+  "version": "1.0.0",
+  "description": "Projeto para rodar Express com TypeScript na Vercel",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
-    "build": "tsc",
-    "serve": "node dist/server.js"
+    "start": "node dist/server.js",         // Usa o JavaScript compilado para rodar o servidor em produção
+    "build": "tsc",                         // Compila o TypeScript para JavaScript em `dist/`
+    "dev": "ts-node src/server.ts",         // Para desenvolvimento local com ts-node
+    "vercel-build": "npm run build"         // Script que a Vercel usará para compilar o projeto
   },
   "devDependencies": {
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.9.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "@types/express": "^4.17.14",           // Tipagens do Express para TypeScript
+    "@types/node": "^18.11.9",              // Tipagens do Node.js para TypeScript
+    "ts-node": "^10.9.2",                   // Executa TypeScript diretamente em desenvolvimento
+    "typescript": "^4.8.4"                  // Compilador TypeScript
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1"
+    "dotenv": "^16.4.5",                    // Para variáveis de ambiente
+    "express": "^4.21.1"                    // Framework Express
   }
 }
