@@ -20,6 +20,6 @@
     "express": "^4.21.1"
   },
   "engines": {
-    "node": "16.x" // Especifique a versão desejada aqui
+    "node": "16.x"
   }
 }
