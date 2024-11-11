@@ -6,7 +6,7 @@
       "use": "@vercel/node",
       "config": {
         "includeFiles": ["src/**/*"],
-        "nodeVersion": "16.x" // Especifique a versão aqui
+        "nodeVersion": "16.x"
       }
     }
   ],
